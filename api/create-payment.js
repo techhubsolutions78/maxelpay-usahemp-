@@ -1,6 +1,6 @@
 
 export default async function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "https://usahemp.store/");
+  res.setHeader("Access-Control-Allow-Origin", "https://usahemp.store");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
   res.setHeader(
     "Access-Control-Allow-Headers",
@@ -49,3 +49,4 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: err.message });
   }
 }
+
